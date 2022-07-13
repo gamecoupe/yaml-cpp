@@ -22,6 +22,11 @@ project "yaml-cpp"
 		systemversion "latest"
 		cppdialect "C++17"
 		staticruntime "off"
+		
+		defines 
+		{ 
+			"YAML_CPP_STATIC_DEFINE"
+		}
 
 	filter "system:linux"
 		pic "On"
