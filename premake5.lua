@@ -27,13 +27,15 @@ project "yaml-cpp"
 		defines 
 		{ 
 			"YAML_CPP_STATIC_DEFINE"
+			-- "yaml_cpp_EXPORTS"
 		}
 
 	filter "system:linux"
 		pic "On"
 		systemversion "latest"
 		cppdialect "C++17"
-		staticruntime "off"
+		-- staticruntime "off"
+		staticruntime "on"
 
 	filter "configurations:Debug"
 		runtime "Debug"
